@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 info error reading version SyntaxError: Unexpected string in JSON at position 5706
+1 info error reading version     at Object.parse (native)
+1 info error reading version     at module.exports (C:\Program Files (x86)\node_modules\npm\lib\utils\parse-json.js:3:15)
+1 info error reading version     at C:\Program Files (x86)\node_modules\npm\lib\npm.js:52:13
+1 info error reading version     at Object.<anonymous> (C:\Program Files (x86)\node_modules\npm\lib\npm.js:403:3)
+1 info error reading version     at Module._compile (module.js:570:32)
+1 info error reading version     at Object.Module._extensions..js (module.js:579:10)
+1 info error reading version     at Module.load (module.js:487:32)
+1 info error reading version     at tryModuleLoad (module.js:446:12)
+1 info error reading version     at Function.Module._load (module.js:438:3)
+1 info error reading version     at Module.require (module.js:497:17)
+1 info error reading version  SyntaxError: Unexpected string in JSON at position 5706
+1 info error reading version     at Object.parse (native)
+1 info error reading version     at module.exports (C:\Program Files (x86)\node_modules\npm\lib\utils\parse-json.js:3:15)
+1 info error reading version     at C:\Program Files (x86)\node_modules\npm\lib\npm.js:52:13
+1 info error reading version     at Object.<anonymous> (C:\Program Files (x86)\node_modules\npm\lib\npm.js:403:3)
+1 info error reading version     at Module._compile (module.js:570:32)
+1 info error reading version     at Object.Module._extensions..js (module.js:579:10)
+1 info error reading version     at Module.load (module.js:487:32)
+1 info error reading version     at tryModuleLoad (module.js:446:12)
+1 info error reading version     at Function.Module._load (module.js:438:3)
+1 info error reading version     at Module.require (module.js:497:17)
+2 verbose cli [ 'C:\\Program Files (x86)\\node.exe',
+2 verbose cli   'C:\\Program Files (x86)\\node_modules\\npm\\bin\\npm-cli.js',
+2 verbose cli   'start' ]
+3 info using SyntaxError: Unexpected string in JSON at position 5706
+3 info using     at Object.parse (native)
+3 info using     at module.exports (C:\Program Files (x86)\node_modules\npm\lib\utils\parse-json.js:3:15)
+3 info using     at C:\Program Files (x86)\node_modules\npm\lib\npm.js:52:13
+3 info using     at Object.<anonymous> (C:\Program Files (x86)\node_modules\npm\lib\npm.js:403:3)
+3 info using     at Module._compile (module.js:570:32)
+3 info using     at Object.Module._extensions..js (module.js:579:10)
+3 info using     at Module.load (module.js:487:32)
+3 info using     at tryModuleLoad (module.js:446:12)
+3 info using     at Function.Module._load (module.js:438:3)
+3 info using     at Module.require (module.js:497:17)
+3 info using  npm@%s SyntaxError: Unexpected string in JSON at position 5706
+3 info using     at Object.parse (native)
+3 info using     at module.exports (C:\Program Files (x86)\node_modules\npm\lib\utils\parse-json.js:3:15)
+3 info using     at C:\Program Files (x86)\node_modules\npm\lib\npm.js:52:13
+3 info using     at Object.<anonymous> (C:\Program Files (x86)\node_modules\npm\lib\npm.js:403:3)
+3 info using     at Module._compile (module.js:570:32)
+3 info using     at Object.Module._extensions..js (module.js:579:10)
+3 info using     at Module.load (module.js:487:32)
+3 info using     at tryModuleLoad (module.js:446:12)
+3 info using     at Function.Module._load (module.js:438:3)
+3 info using     at Module.require (module.js:497:17)
+4 info using node@v6.10.3
+5 verbose stack Error: missing script: start
+5 verbose stack     at run (C:\Program Files (x86)\node_modules\npm\lib\run-script.js:151:19)
+5 verbose stack     at C:\Program Files (x86)\node_modules\npm\lib\run-script.js:61:5
+5 verbose stack     at C:\Program Files (x86)\node_modules\npm\node_modules\read-package-json\read-json.js:356:5
+5 verbose stack     at checkBinReferences_ (C:\Program Files (x86)\node_modules\npm\node_modules\read-package-json\read-json.js:320:45)
+5 verbose stack     at final (C:\Program Files (x86)\node_modules\npm\node_modules\read-package-json\read-json.js:354:3)
+5 verbose stack     at then (C:\Program Files (x86)\node_modules\npm\node_modules\read-package-json\read-json.js:124:5)
+5 verbose stack     at C:\Program Files (x86)\node_modules\npm\node_modules\read-package-json\read-json.js:311:12
+5 verbose stack     at C:\Program Files (x86)\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+5 verbose stack     at tryToString (fs.js:456:3)
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
+6 verbose cwd C:\Users\LADYHAWKE\workspace\countdown
+7 error Windows_NT 6.3.9600
+8 error argv "C:\\Program Files (x86)\\node.exe" "C:\\Program Files (x86)\\node_modules\\npm\\bin\\npm-cli.js" "start"
+9 error node v6.10.3
+10 error npm  vSyntaxError: Unexpected string in JSON at position 5706
+11 error missing script: start
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
