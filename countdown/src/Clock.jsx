@@ -12,8 +12,21 @@ class Clock extends Component{
         }
     }
     
-    
+    getTimeDifference(deadline) {
+        //use let for variables that do need updating
+        //use const for variables that don't need updating
+        const time = Date.parse(deadline) - Date.parse(new Date());
+        cont seconds = Math.floor((time/1000) %60);
+        cont minutes = Math.floor((time/1000/60) %60);
+        cont hours = Math.floor((time/1000*60*60) %24);
+        cont days = Math.floor((time/1000*60*60*24));
+
+        this.setState({days: days});
+        
+    }
     render() {
+        this.getTimeDifference(this.props.deadline);
+
         return (
     <div>
         <div className="Clock-days">{this.state.days} days</div>
