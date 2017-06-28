@@ -8,23 +8,10 @@
 	  font-size: 50px;
 }
 
-.Clock-days {
-	
+.Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds  {
+	display: inline;
+	margin: 10px;
 }
-
-.Clock-hours {
-	  
-}
-
-.Clock-minutes {
-	
-}
-
-.Clock-seconds {
-	
-}
-
-
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
