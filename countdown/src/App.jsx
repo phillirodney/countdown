@@ -6,14 +6,15 @@ class App extends Component {
     constructor(props) {
         super(props); 
         this.state = {
-                deadline: 'July 29, 2017'
+                deadline: 'July 29, 2017', 
+                newDeadine: ''
         }
     }
     
     changeDeadline() {
         //never mutate or change state DIRECTLY
         //this.state.deadline = 'November 25, 2017' is BAD
-        this.setState({deadline: 'November 25, 2017'})
+       this.setState({deadline: this.state.newDeadline});
         //instead we use key value pairs, stay bug free	
     }
     
@@ -30,7 +31,7 @@ class App extends Component {
                     <div className="Clock-seconds">20 Seconds</div>
                 </div>
                 <div>
-                    <input placeholder='new date' />
+                    <input placeholder='new date' onChange={event => this.setState({newDeadline: event.target.value})}/>
                     <button onClick={() => this.changeDeadline()}>Submit</button>
                     </div>
 
