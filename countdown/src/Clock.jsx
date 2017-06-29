@@ -16,6 +16,19 @@ class Clock extends Component{
         this.getTimeDifference(this.props.deadline);
     }
     
+    //this function adds a 0 infront of any number less than 10 just to clean up the code!
+    leading0(num) {
+        //cleanup code with ternary expression
+        return num < 10 ? '0' + num : num;
+
+       /* if (num <10) {
+           return '0' + num;     
+    }
+                return num;*/
+    }
+ 
+     
+    //runs after the component has completely rendered onto the application.
     componentDidMount() {
         //continually update at millisecond intervals
         setInterval(() => this.getTimeDifference(this.props.deadline), 1000);
@@ -37,10 +50,10 @@ class Clock extends Component{
     render() {
         return (
     <div>
-        <div className="Clock-days">{this.state.days} days</div>
-        <div className="Clock-hours">{this.state.hours} hours</div>
-        <div className="Clock-minutes">{this.state.minutes} minutes</div>
-        <div className="Clock-seconds">{this.state.seconds} seconds</div>
+        <div className="Clock-days">{this.leading0(this.state.days)} days</div>
+        <div className="Clock-hours">{this.leading0(this.state.hours)} hours</div>
+        <div className="Clock-minutes">{this.leading0(this.state.minutes)} minutes</div>
+        <div className="Clock-seconds">{this.leading0(this.state.seconds)} seconds</div>
     </div>
         )
     }
